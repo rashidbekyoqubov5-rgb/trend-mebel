@@ -1,84 +1,34 @@
-import { Link } from 'react-router-dom'
-
 function About() {
   return (
-    <div>
-      <section className="py-12 px-4">
-        <div className="max-w-5xl mx-auto bg-stone-200 rounded-xl p-5 md:p-8">
-          <div className="grid gap-8 md:grid-cols-2">
-            <div>
-              <h2 className="text-3xl font-bold mb-3">Makonlarga nafislik, hayotga qulaylik.</h2>
-              <p className="text-stone-600 mb-4">
-                Biz zamonaviy dizayn va yuqori sifatni birlashtirib, har bir xonadon uchun o'ziga
-                xos mebellar yaratamiz.
-              </p>
-              <Link to="/about" className="font-semibold text-stone-700">
-                Batafsil ma'lumot ↗
-              </Link>
+    <div className="max-w-3xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-4">Biz haqimizda</h1>
 
-              <hr className="my-5 border-stone-400" />
+      <p className="mb-3">
+        Trend Mebel — Gazalkent shahrida joylashgan mebel do'koni va ishlab chiqarish sexi.
+        Biz uy, ofis va oshxona uchun zamonaviy mebellar tayyorlaymiz va sotamiz.
+      </p>
+      <p className="mb-6">
+        Bizda tajribali ustalar ishlaydi. Har bir buyurtma sifatli materialdan tayyorlanadi va
+        barcha mebellarga kafolat beriladi. Xohlagan o'lcham va dizayn bo'yicha buyurtma ham
+        qabul qilamiz.
+      </p>
 
-              <h3 className="text-sm font-bold text-stone-600 mb-3">BIZNING YO'NALISHLARIMIZ</h3>
-              <ul className="space-y-2 mb-5">
-                <li>✓ Yotoqxona va mehmonxona mebellari</li>
-                <li>✓ Oshxona uchun individual yechimlar</li>
-                <li>✓ Zamonaviy shkaf va garderoblar</li>
-              </ul>
+      <h2 className="text-xl font-bold mb-2">Nima uchun biz?</h2>
+      <ul className="list-disc pl-6 mb-6">
+        <li>Sifatli material</li>
+        <li>Qulay narxlar</li>
+        <li>Buyurtma asosida tayyorlash</li>
+        <li>Yetkazib berish va o'rnatish xizmati</li>
+        <li>Kafolat</li>
+      </ul>
 
-              <div className="bg-stone-300 rounded p-4">
-                <p className="text-sm font-bold text-stone-600">BIZNING TAMOYILIMIZ</p>
-                <p className="text-xl italic font-semibold">"Sifat — har bir detalda."</p>
-              </div>
-            </div>
-
-            <div>
-              <img src="/images/about.jpg" alt="Interyer" className="w-full h-80 md:h-96 object-cover rounded-xl" />
-              <p className="text-sm text-stone-600 mt-3">✦ Har bir detalda mukammallik</p>
-            </div>
-          </div>
-
-          <div className="bg-stone-900 text-amber-200 rounded-xl p-6 mt-8 grid gap-4 grid-cols-3">
-            <div>
-              <p className="text-2xl font-bold">10+</p>
-              <p className="text-white text-sm">Yillik tajriba</p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold">500+</p>
-              <p className="text-white text-sm">Mamnun mijoz</p>
-            </div>
-            <div>
-              <p className="text-2xl font-bold">1000+</p>
-              <p className="text-white text-sm">Tayyor loyihalar</p>
-            </div>
-          </div>
-
-          <h3 className="text-xl font-bold mt-8 mb-4">Nima uchun biz?</h3>
-          <div className="grid gap-4 grid-cols-2 md:grid-cols-4 font-semibold text-sm">
-            <p>◆ Premium sifat</p>
-            <p>✎ Noyob dizayn</p>
-            <p>⛨ Ishonch</p>
-            <p>➜ Yetkazib berish</p>
-          </div>
-
-          <Link
-            to="/contact"
-            className="flex justify-between bg-stone-300 rounded p-3 mt-6 font-semibold"
-          >
-            <span>Orzuyingizdagi makonni yarating.</span>
-            <span>→</span>
-          </Link>
-        </div>
-      </section>
-
-      <section className="max-w-5xl mx-auto px-4 pb-12">
-        <h2 className="text-xl font-bold mb-2">Ma'lumotlar</h2>
-        <div className="bg-white p-4 rounded shadow">
-          <p><b>Manzil:</b> Toshkent viloyati, Gazalkent shahri</p>
-          <p><b>Telefon:</b> +998 90 123 45 67</p>
-          <p><b>Ish vaqti:</b> Dushanba – Shanba, 9:00 – 19:00</p>
-          <p><b>Dam olish kuni:</b> Yakshanba</p>
-        </div>
-      </section>
+      <h2 className="text-xl font-bold mb-2">Ma'lumotlar</h2>
+      <div className="bg-white p-4 rounded shadow">
+        <p><b>Manzil:</b> Toshkent viloyati, Gazalkent shahri</p>
+        <p><b>Telefon:</b> +998 90 123 45 67</p>
+        <p><b>Ish vaqti:</b> Dushanba – Shanba, 9:00 – 19:00</p>
+        <p><b>Dam olish kuni:</b> Yakshanba</p>
+      </div>
     </div>
   )
 }

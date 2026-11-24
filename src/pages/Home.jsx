@@ -12,9 +12,9 @@ function Home() {
             alt="Mebel"
             className="w-full md:w-1/2 h-72 object-cover rounded"
           />
-
+6
           <div className="md:w-1/2 text-center md:text-left">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Uyingizga qulaylik va go'zallik</h1>
+            <h1 className="text-4xl font-bold mb-4">Uyingizga qulaylik va go'zallik</h1>
             <p className="mb-4">Sifatli va zamonaviy mebellar eng qulay narxlarda</p>
             <ul className="mb-6 text-left inline-block">
               <li>✔ Gazalkent shahri bo'yicha bepul yetkazib berish</li>
@@ -31,7 +31,7 @@ function Home() {
 
       <section className="max-w-5xl mx-auto p-6">
         <h2 className="text-2xl font-bold mb-4 text-center">Mashhur mahsulotlar</h2>
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           {products.slice(0, 12).map((item) => (
             <ProductCard key={item.id} product={item} />
           ))}
@@ -61,7 +61,7 @@ function Home() {
 
       <section className="max-w-5xl mx-auto py-12 px-4">
         <h2 className="text-2xl font-bold mb-6 text-center">Bizning xizmatlar</h2>
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           <div className="bg-white p-5 rounded shadow">
             <h3 className="font-bold mb-1">Buyurtma asosida</h3>
             <p>Xohlagan o'lcham, rang va dizayn bo'yicha mebel tayyorlab beramiz.</p>
@@ -80,7 +80,7 @@ function Home() {
       <section className="bg-white py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold mb-6 text-center">Qanday buyurtma beriladi?</h2>
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-4 text-center">
+          <div className="grid gap-6 md:grid-cols-4 text-center">
             <div>
               <p className="text-3xl font-bold text-amber-700">1</p>
               <p>Mahsulotni tanlang</p>
@@ -103,7 +103,7 @@ function Home() {
 
       <section className="max-w-5xl mx-auto py-12 px-4">
         <h2 className="text-2xl font-bold mb-6 text-center">Nima uchun Trend Mebel?</h2>
-        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-3">
           <div className="bg-white p-5 rounded shadow">
             <h3 className="font-bold mb-1">Sifatli materiallar</h3>
             <p>Yog'och, MDF va sifatli mato ishlatamiz. Mebel uzoq yillar xizmat qiladi.</p>
@@ -195,7 +195,7 @@ function Home() {
             sexi. Biz uy, ofis va oshxona uchun sifatli mebellar tayyorlaymiz.
           </p>
 
-          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 text-center">
+          <div className="grid gap-6 md:grid-cols-3 text-center">
             <div className="bg-amber-50 p-5 rounded">
               <h3 className="font-bold mb-1">Manzil</h3>
               <p>Toshkent viloyati, Gazalkent shahri</p>

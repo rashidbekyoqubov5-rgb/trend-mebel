@@ -14,7 +14,7 @@ function Products() {
 
   return (
     <div className="max-w-5xl mx-auto p-6">
-      <h1 className="text-2xl md:text-3xl font-bold mb-4">Mahsulotlar</h1>
+      <h1 className="text-3xl font-bold mb-4">Mahsulotlar</h1>
 
       <div className="flex flex-wrap gap-2 mb-6">
         {categories.map((c) => (
@@ -32,7 +32,7 @@ function Products() {
         ))}
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-3">
         {list.map((item) => (
           <ProductCard key={item.id} product={item} />
         ))}
