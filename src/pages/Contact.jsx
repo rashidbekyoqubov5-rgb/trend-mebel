@@ -1,3 +1,4 @@
+import { PhoneIcon, PinIcon, ClockIcon } from '../components/Icons'
 import { useState } from 'react'
 
 function Contact() {
@@ -22,24 +23,24 @@ function Contact() {
       <div className="grid gap-4 md:grid-cols-2">
         <div>
           <div className="bg-stone-200 rounded-xl p-5 mb-3">
-            <h2 className="font-bold mb-2">☎ Telefon raqam</h2>
+            <h2 className="font-bold mb-2 flex items-center gap-2"><PhoneIcon /> Telefon raqam</h2>
             <p className="text-xl font-semibold">+998 90 123 45 67</p>
             <p className="text-stone-600">Bizga qo'ng'iroq qiling</p>
           </div>
 
           <div className="bg-stone-200 rounded-xl p-5 mb-3">
-            <h2 className="font-bold mb-2">⌖ Manzilimiz</h2>
+            <h2 className="font-bold mb-2 flex items-center gap-2"><PinIcon /> Manzilimiz</h2>
             <p className="font-semibold">Toshkent viloyati, Gazalkent shahri</p>
             <p className="text-stone-600">Showroom va ofisimiz</p>
           </div>
 
           <div className="bg-stone-200 rounded-xl p-5 mb-3">
-            <h2 className="font-bold mb-2">◷ Ish vaqtimiz</h2>
+            <h2 className="font-bold mb-2 flex items-center gap-2"><ClockIcon /> Ish vaqtimiz</h2>
             <p className="font-semibold">Dushanba – Shanba</p>
             <p className="text-stone-600">09:00 – 18:00</p>
           </div>
 
-          <p className="text-sm text-stone-600">Bizni kuzating: Instagram · Telegram · Facebook</p>
+          <p className="text-sm text-stone-600">Bizni kuzating: Instagram, Telegram, Facebook</p>
         </div>
 
         <form onSubmit={handleSubmit} className="bg-stone-900 text-white rounded-xl p-5">

@@ -1,3 +1,4 @@
+import { CheckIcon, ArrowUpRightIcon, SparkleIcon, DiamondIcon, PencilIcon, ShieldIcon, TruckIcon, ArrowRightIcon } from '../components/Icons'
 import { Link } from 'react-router-dom'
 
 function About() {
@@ -13,16 +14,16 @@ function About() {
                 xos mebellar yaratamiz.
               </p>
               <Link to="/about" className="font-semibold text-stone-700">
-                Batafsil ma'lumot ↗
+                Batafsil ma'lumot <ArrowUpRightIcon size={16} className="align-middle" />
               </Link>
 
               <hr className="my-5 border-stone-400" />
 
               <h3 className="text-sm font-bold text-stone-600 mb-3">BIZNING YO'NALISHLARIMIZ</h3>
               <ul className="space-y-2 mb-5">
-                <li>✓ Yotoqxona va mehmonxona mebellari</li>
-                <li>✓ Oshxona uchun individual yechimlar</li>
-                <li>✓ Zamonaviy shkaf va garderoblar</li>
+                <li className="flex items-center gap-2"><CheckIcon size={18} /> Yotoqxona va mehmonxona mebellari</li>
+                <li className="flex items-center gap-2"><CheckIcon size={18} /> Oshxona uchun individual yechimlar</li>
+                <li className="flex items-center gap-2"><CheckIcon size={18} /> Zamonaviy shkaf va garderoblar</li>
               </ul>
 
               <div className="bg-stone-300 rounded p-4">
@@ -33,7 +34,7 @@ function About() {
 
             <div>
               <img src="/images/about.jpg" alt="Interyer" className="w-full h-80 md:h-96 object-cover rounded-xl" />
-              <p className="text-sm text-stone-600 mt-3">✦ Har bir detalda mukammallik</p>
+              <p className="text-sm text-stone-600 mt-3 flex items-center gap-2"><SparkleIcon size={16} /> Har bir detalda mukammallik</p>
             </div>
           </div>
 
@@ -54,10 +55,10 @@ function About() {
 
           <h3 className="text-xl font-bold mt-8 mb-4">Nima uchun biz?</h3>
           <div className="grid gap-4 grid-cols-2 md:grid-cols-4 font-semibold text-sm">
-            <p>◆ Premium sifat</p>
-            <p>✎ Noyob dizayn</p>
-            <p>⛨ Ishonch</p>
-            <p>➜ Yetkazib berish</p>
+            <p className="flex items-center gap-2"><DiamondIcon /> Premium sifat</p>
+            <p className="flex items-center gap-2"><PencilIcon /> Noyob dizayn</p>
+            <p className="flex items-center gap-2"><ShieldIcon /> Ishonch</p>
+            <p className="flex items-center gap-2"><TruckIcon /> Yetkazib berish</p>
           </div>
 
           <Link
@@ -65,7 +66,7 @@ function About() {
             className="flex justify-between bg-stone-300 rounded p-3 mt-6 font-semibold"
           >
             <span>Orzuyingizdagi makonni yarating.</span>
-            <span>→</span>
+            <ArrowRightIcon />
           </Link>
         </div>
       </section>

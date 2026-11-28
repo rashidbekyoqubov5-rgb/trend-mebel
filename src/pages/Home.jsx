@@ -1,3 +1,4 @@
+import { CheckIcon } from '../components/Icons'
 import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import { products } from '../data/products'
@@ -5,26 +6,27 @@ import { products } from '../data/products'
 function Home() {
   return (
     <div>
-      <section className="bg-amber-100 py-12 px-4">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
+      <section className="bg-amber-100 px-4 py-8 md:py-0 md:min-h-[calc(100vh-4rem)] flex items-center">
+        <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <img
-            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800"
+            src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200"
             alt="Mebel"
-            className="w-full md:w-1/2 h-72 object-cover rounded"
+            className="w-full md:w-1/2 h-64 sm:h-80 md:h-[34rem] object-cover rounded-xl"
           />
 
           <div className="md:w-1/2 text-center md:text-left">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Uyingizga qulaylik va go'zallik</h1>
-            <p className="mb-4">Sifatli va zamonaviy mebellar eng qulay narxlarda</p>
-            <ul className="mb-6 text-left inline-block">
-              <li>✔ Gazalkent shahri bo'yicha bepul yetkazib berish</li>
-              <li>✔ Barcha mebellarga 1 yil kafolat</li>
-              <li>✔ Xohlagan o'lcham bo'yicha buyurtma</li>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">Uyingizga qulaylik va go'zallik</h1>
+            <p className="text-lg mb-5">Sifatli va zamonaviy mebellar eng qulay narxlarda</p>
+            <ul className="mb-8 space-y-2 text-left inline-block md:block">
+              <li className="flex items-center gap-2"><CheckIcon size={18} className="text-amber-700" /> Gazalkent shahri bo'yicha bepul yetkazib berish</li>
+              <li className="flex items-center gap-2"><CheckIcon size={18} className="text-amber-700" /> Barcha mebellarga 1 yil kafolat</li>
+              <li className="flex items-center gap-2"><CheckIcon size={18} className="text-amber-700" /> Xohlagan o'lcham bo'yicha buyurtma</li>
             </ul>
-            <br />
-            <Link to="/products" className="bg-amber-700 text-white px-6 py-3 rounded">
-              Mahsulotlarni ko'rish
-            </Link>
+            <div>
+              <Link to="/products" className="inline-block bg-amber-700 text-white px-8 py-3 rounded text-lg">
+                Mahsulotlarni ko'rish
+              </Link>
+            </div>
           </div>
         </div>
       </section>
